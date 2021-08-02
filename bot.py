@@ -28,22 +28,24 @@ dotenv_path = join(dir_path, '.env')
 load_dotenv(dotenv_path)
 
 # credentials
-TMI_TOKEN = os.environ.get('TMI_TOKEN')
-CLIENT_ID = os.environ.get('CLIENT_ID')
-BOT_NICK = os.environ.get('BOT_NICK')
-BOT_PREFIX = os.environ.get('BOT_PREFIX')
-CHANNEL = os.environ.get('CHANNEL')
+# TMI_TOKEN = os.environ.get('TMI_TOKEN')
+# CLIENT_ID = os.environ.get('CLIENT_ID')
+# BOT_NICK = os.environ.get('BOT_NICK')
+# BOT_PREFIX = os.environ.get('BOT_PREFIX')
+# CHANNEL = os.environ.get('CHANNEL')
 
 JSON_FILE = str(os.path.dirname(os.path.realpath(__file__))) + '/data.json'
 
 
 bot = commands.Bot(
-    irc_token=TMI_TOKEN,
-    client_id=CLIENT_ID,
-    nick=BOT_NICK,
-    prefix=BOT_PREFIX,
-    initial_channels=[CHANNEL]
+    token="rs2vqkzehipztycz9pba1elolf08gg",
+    client_id="gp762nuuoqcoxypju8c569th9wz7q5",
+    nick="Poke_Bet_Bot",
+    prefix="!",
+    initial_channels=["Troyboy362"]
 )
+
+
 
 
 @bot.event
